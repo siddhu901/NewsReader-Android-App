@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/weather1"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content" >
+	<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+	<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+		
+
+    <LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp" >
+	    <EditText	
+        android:id="@+id/searchplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        
+    	</EditText>
+    	<Button
+		    android:id="@+id/button1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="seeWeatherDetailsUserInput"
+		    android:text="Ok" />
+        
+    	<Button
+		    android:id="@+id/currentLoc"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="seeWeatherDetailsCurent"
+		    android:text="current" />
+    	
+	    </LinearLayout>
+
+    
+
+    	 <TextView
+		        android:id="@+id/weatherTodayTemp"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="0dp" >
+    	<TextView
+		        android:id="@+id/weatherPlace"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    		
+    		 <ImageView
+			     android:id="@+id/weatherTodayImage"
+			      android:layout_width="50dip"
+			      android:layout_height="wrap_content"
+			     android:src="@drawable/untick" />
+		</LinearLayout>
+		
+		<TextView
+		        android:id="@+id/weatherTodayDesc"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		<TextView
+		        android:id="@+id/weatherTodayWind"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</LinearLayout>
+	<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp" >
+   
+		     <TextView
+		        android:id="@+id/weatherText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Next 4 days report"
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    		 <ImageView
+			     android:id="@+id/weatherImage"
+			      android:layout_width="50dip"
+			      android:layout_height="wrap_content"
+			     android:src="@drawable/untick" />
+    		
+		</LinearLayout>
+	
+	    	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp" >
+   
+		    <ImageView
+			     android:id="@+id/weatherImage1"
+			      android:layout_width="50dip"
+			      android:layout_height="wrap_content"
+			     android:src="@drawable/untick" />
+    		 <TextView
+		        android:id="@+id/weatherText1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    		 
+		</LinearLayout>
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp" >
+    		 <ImageView
+			     android:id="@+id/weatherImage2"
+			     android:layout_width="50dip"
+			     android:layout_height="wrap_content"
+			     android:src="@drawable/untick" />
+    		 <TextView
+		        android:id="@+id/weatherText2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    		 
+		</LinearLayout>
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp" >
+    		 <ImageView
+			     android:id="@+id/weatherImage3"
+			      android:layout_width="50dip"
+			      android:layout_height="wrap_content"
+			     android:src="@drawable/untick" />
+    		 <TextView
+		        android:id="@+id/weatherText3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    		 
+		</LinearLayout>
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp" >
+    		 <ImageView
+			     android:id="@+id/weatherImage4"
+			     android:layout_width="50dip"
+			     android:layout_height="wrap_content"
+			     android:src="@drawable/untick" />
+    		 <TextView
+		        android:id="@+id/weatherText4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" "
+		        android:editable="true"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+    		 
+		</LinearLayout>
+		
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView> 
